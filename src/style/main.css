@@ -47,18 +47,19 @@ body {
 @keyframes moveEffect{
   0%{
     font-size: 12px;
-    top: 0;
+    
+    /* top: 0;
     inset-block-start: 0;
     left: 0;
-    inset-inline-start: 0;
+    inset-inline-start: 0; */
 
   }
   100%{
     font-size: 24px;
-    top: 75px;
+    /* top: 75px;
     inset-block-start: 75px;
     left: 400px;
-    inset-inline-start: 400px;
+    inset-inline-start: 400px; */
   }
 }
 
@@ -67,8 +68,7 @@ body {
   animation-name: moveEffect;
   animation-duration: 5000ms;
   animation-fill-mode: forwards;
-  position: absolute;
-  z-index: 1;
+  background-color: greenyellow;
 }
 
 
