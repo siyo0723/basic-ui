@@ -12,7 +12,7 @@ body {
   margin: 0;
   font-family: "SUIT Variable", sans-serif;
   background-color: #ccc;
-  background-image:  url(/images/bg_flower.png), linear-gradient(to bottom, #aaa 0%, #ccc 30%, #eee 50%, #fff 100%);
+  background-image:  url(../images/bg_flower.png), linear-gradient(to bottom, #aaa 0%, #ccc 30%, #eee 50%, #fff 100%);
   background-repeat: no-repeat;
   background-position: 50% 0, 0 0;
 }
@@ -92,12 +92,12 @@ body {
 
 .visual::before{
   /* z-index: 1; */
-  background-image: url(/images/ani_flower_01.png), url(/images/ani_flower_02.png);
+  background-image: url(../images/ani_flower_01.png), url(../images/ani_flower_02.png);
   background-position: 0 -10px, 600px 10px;
 }
 
 .visual::after{
-  background-image: url(/images/ani_flower_03.png), url(/images/ani_flower_04.png);
+  background-image: url(../images/ani_flower_03.png), url(../images/ani_flower_04.png);
   background-position: 300px 0, 800px 30px;
 }
 
