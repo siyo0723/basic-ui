@@ -10,6 +10,7 @@
 /* 그라디언트 배경, 배경 이미지 */
 body {
   margin: 0;
+  line-height: 1.15;
   font-family: "SUIT Variable", sans-serif;
   background-color: #ccc;
   background-image:  url(../images/bg_flower.png), linear-gradient(to bottom, #aaa 0%, #ccc 30%, #eee 50%, #fff 100%);
@@ -30,7 +31,7 @@ body {
 .header {
   background-color: #fff;
   height: 120px;
-  padding: 0 50px;
+  padding: 0 28px;
   border-radius: 0 0 15px 15px;
   position: relative;
 }
@@ -41,21 +42,64 @@ body {
   position: absolute;
   top: 45px;
   left: 60px;
+  margin: 0;
+  font-size: 1em;
+
+  a, img{
+    display: block;
+    /* 인라인 상자 정렬 */
+    /* vertical-align: middle; */
+  }
 }
+
+/* 텍스트 링크 모음 */
+.member-service {
+  --spacing: 8px;
+  
+  translate: var(--spacing, 8px) 0;
+  font-size: 0;
+  list-style-type: none;
+  padding-inline-start: 0;
+  margin: 0;
+  text-align: right;
+  
+  li {
+    display: inline-block;
+    margin: 0;
+    font-size: 0.875rem;
+    
+    a {
+      display: inherit;
+      padding: 8px var(--spacing, 8px) 8px 4px;
+      font-variant: small-caps;
+      margin: 0;
+      text-transform: uppercase;
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}
+
+
 
 /* 비주얼 */
 @keyframes moveEffect{
   0%{
     font-size: 12px;
+<<<<<<< HEAD
     
     /* top: 0;
     inset-block-start: 0;
     left: 0;
     inset-inline-start: 0; */
+=======
+    translate: 0 0;
+>>>>>>> ef912c1452440eb82c49ad948c138e43a687ce78
 
   }
   100%{
     font-size: 24px;
+<<<<<<< HEAD
     /* top: 75px;
     inset-block-start: 75px;
     left: 400px;
@@ -69,27 +113,43 @@ body {
   animation-duration: 5000ms;
   animation-fill-mode: forwards;
   background-color: greenyellow;
+=======
+    translate: 320px 75px;
+  }
 }
 
+@keyframes fadeEffect{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+>>>>>>> ef912c1452440eb82c49ad948c138e43a687ce78
+}
 
 .visual {
   height: 120px;
   block-size: 120px;
   position: relative;
 
-  &::before, &::after{
-    content: "";
-    width: inherit;
-    inline-size: inherit;
-    height: inherit;
-    block-size: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-  }
 }
 
+.visual::before, .visual::after{
+  animation-name: fadeEffect;
+  animation-duration: 4000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  content: "";
+  width: inherit;
+  inline-size: inherit;
+  height: inherit;
+  block-size: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+}
 .visual::before{
   /* z-index: 1; */
   background-image: url(../images/ani_flower_01.png), url(../images/ani_flower_02.png);
@@ -99,9 +159,19 @@ body {
 .visual::after{
   background-image: url(../images/ani_flower_03.png), url(../images/ani_flower_04.png);
   background-position: 300px 0, 800px 30px;
+  animation-delay: 2000ms;
 }
 
 
+.visual-text{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  animation-name: moveEffect;
+  animation-duration: 5000ms;
+  animation-fill-mode: forwards;
+  display: inline-block;
+  z-index: 1;
+  position: relative;
+}
 
 
 /* 메인 콘텐츠 */
