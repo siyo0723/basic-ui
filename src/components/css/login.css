@@ -1,4 +1,4 @@
-@import url(/style/theme.css);
+@import url(/basic-ui/src/style/theme.css);
 
 /* 기본 글꼴 */
 :root{
@@ -7,4 +7,39 @@
 
 body{
   font-family: var(--base-font-family);
+}
+
+
+/* 로그인 */
+.login {
+
+  --box-start-color: var(--orange-100);
+  --box-end-color: var(--orange-200);
+  --box-shadow-color: var(--gray-700);
+
+  background-image: radial-gradient(circle at right top, var(--orange-100),  var(--orange-200));
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 5px 5px 0 0 var(--box-shadow-color);
+}
+
+.login-title{
+  --color: var(--yellow);
+
+  color: var(--color);
+  margin: 0;
+  font-size: 0.9375rem;
+}
+
+fieldset {
+  background-color: white;
+}
+
+.member-sign {
+  display: flex;
+  list-style-type: none;
+}
+
+.member-sign>li {
+  margin-right: 20px;
 }
