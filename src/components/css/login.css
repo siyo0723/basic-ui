@@ -8,3 +8,17 @@
 body{
   font-family: var(--base-font-family);
 }
+
+
+/* 로그인 */
+.login{
+
+  --box-start-color: var(--orange-100);
+  --box-end-color: var(--orange-200);
+  --box-shadow-color: var(--gray-700);
+
+  background-image: radial-gradient(circle at right top, var(--box-start-color,), var(--box-end-color));
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 5px 5px 0 0 var(--box-shadow-color);
+}
