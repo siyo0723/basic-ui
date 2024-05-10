@@ -28,8 +28,9 @@ body, h1{
 
   input:focus{
     outline: none;
+    /* outline-offset: 4px; */
   }
-
+  
   input:focus-visible{
     outline: 2px solid red;
   }
