@@ -23,13 +23,17 @@ body{
     button{
       color: yellow;
       
-      span{
-        border-bottom: 2px solid #000;
+      &::after{
+        content: "";
+        background: #000;
+        display: block;
+        height: 1px;
+        block-size: 1px;
       }
     }
 
     ul{
-      display: block;
+      /* display: block; */
     }
   }
 
