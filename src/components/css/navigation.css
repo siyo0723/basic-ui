@@ -6,6 +6,17 @@ body{
   margin: 50px;
 }
 
+.header{
+  position: relative;
+}
+
+.logo{
+  position: absolute;
+  top: 15px;
+  left: 30px;
+}
+
+
 .menu{
   background:orangered linear-gradient(to bottom, orange, orangered, orange);
   box-shadow: 0 -5px 0 0 #121212;
@@ -13,10 +24,11 @@ body{
   display: flow-root;
   padding-left: 225px;
   padding-inline-start: 225px;
-
+  
   > li{
     float: left;
     border-left: 2px solid #fff;
+    position: relative;
   }
 
   .is--active{
@@ -33,7 +45,7 @@ body{
     }
 
     ul{
-      /* display: block; */
+      display: block;
     }
   }
 
@@ -61,6 +73,14 @@ body{
   ul{
     display: none;
     position: absolute;
+    top: 65px;
+    left: 0;
+    background: pink;
+    white-space: nowrap;
+
+    li{
+      display: inline-block;
+    }
   }
 
   /* ul[aria-hidden="false"]{
