@@ -35,3 +35,33 @@ body, h1{
     outline: 2px solid red;
   }
 }
+
+
+.tooltip{
+  margin-top: 50px;
+
+  .tooltip-icon{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 50%;
+    padding: 0.25em;
+    font-size: 10px;
+
+    &:hover + .tooltip-content, &:focus + .tooltip-content{
+      display: block;
+    }
+  }
+
+  .tooltip-content{
+    display: none;
+    margin: 10px;
+    background: rgba(0,0,0,0.5);
+    padding: 15px;
+    color: #fff;
+    width: 15em;
+  }
+}
