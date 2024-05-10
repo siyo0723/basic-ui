@@ -19,6 +19,20 @@ body{
     border-left: 2px solid #fff;
   }
 
+  .is--active{
+    button{
+      color: yellow;
+      
+      span{
+        border-bottom: 2px solid #000;
+      }
+    }
+
+    ul{
+      display: block;
+    }
+  }
+
   button{
     font-size: 1.5rem;
     font-weight: 700;
@@ -30,10 +44,23 @@ body{
     border: 0;
     color: #fff;
     text-shadow: 1px 1px 0 #000 , -1px -1px 0 #000;
+
+    span{
+      display: block;
+    }
   }
+
+  /* button[aria-expanded="true"]{
+    color: lime;
+  } */
 
   ul{
     display: none;
+    position: absolute;
   }
+
+  /* ul[aria-hidden="false"]{
+    display: block;
+  } */
 
 }
