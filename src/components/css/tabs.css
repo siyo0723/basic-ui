@@ -1,3 +1,43 @@
 @import url(/style/reset.css);
 @import url(/style/theme.css);
 @import url(/style/base.css);
+
+/* 탭 컴포넌트 */
+
+body, h1 {
+  margin: 20px;
+}
+
+
+.tabs{
+  background: yellow;
+  width: 400px;
+  inline-size: 400px;
+}
+
+/* 탭 컴포넌트 */
+.tab{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+  color: gray;
+  background-color: #eee;
+  
+  &.is-selected{
+    border-color: currentColor currentColor white currentColor;
+    color: orangered;
+    background-color: white;
+  }
+}
+
+/* 탭 컴포넌트 그룹 */
+.tab-list{
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+
