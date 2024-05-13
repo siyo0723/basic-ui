@@ -1,6 +1,6 @@
-@import url(/style/reset.css);
-@import url(/style/theme.css);
-@import url(/style/base.css);
+@import url(../../style/reset.css);
+@import url(../../style/theme.css);
+@import url(../../style/base.css);
 
 
 /* input 컴포넌트*/

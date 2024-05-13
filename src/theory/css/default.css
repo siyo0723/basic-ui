@@ -1,3 +1,8 @@
+:root{
+  --light-blue: #9EA7CD;
+  --dark-blue: #24388D; 
+}
+
 *, *::before, *::after{
   box-sizing: border-box;
 }
