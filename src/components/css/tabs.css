@@ -17,10 +17,6 @@ body, h1 {
 
 /* 탭 컴포넌트 */
 .tab{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
   border: 1px solid gray;
   padding: 0.5rem 1rem;
   border-radius: 0.25rem 0.25rem 0 0;
