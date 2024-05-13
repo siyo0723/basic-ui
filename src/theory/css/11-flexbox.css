@@ -1,0 +1,52 @@
+@import url(/theory/css/default.css);
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+
+  div{
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #000;
+  }
+}
+
+.header{
+  height: 70px;
+  block-size: 70px;
+}
+
+.navigation{
+  height: 50px;
+  block-size: 50px;
+}
+
+.wrapper{
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 50px;
+  flex: 1 0 0;
+  overflow: auto;
+}
+
+/* .main과 .sidebar를 Grouping */
+.main{
+  background-color: yellow;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.sidebar{
+  background-color: pink;
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.footer{
+  height: 50px;
+  block-size: 50px;
+}
