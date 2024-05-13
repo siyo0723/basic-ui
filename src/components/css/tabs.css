@@ -57,6 +57,7 @@ body, h1 {
     gap: 0.5rem;
 
     a{
+      display: flex;
       flex: 1 1 auto;
       overflow: hidden;
       text-overflow: ellipsis;
