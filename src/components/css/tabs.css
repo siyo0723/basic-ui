@@ -11,8 +11,8 @@ body, h1 {
 
 .tabs{
   background: yellow;
-  width: 400px;
-  inline-size: 400px;
+  width: 50%;
+  inline-size: 50%;
 }
 
 /* 탭 컴포넌트 */
@@ -51,9 +51,15 @@ body, h1 {
     gap: 0.5rem;
 
     a{
-      display: flex;
-      flex-flow: row nowrap;
-      gap: 0.5rem;
+      background: lime;
+      flex: 1 1 auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
+
+    span{
+      flex: 0 0 auto;
+    } 
   }
 }
