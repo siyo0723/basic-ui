@@ -78,12 +78,13 @@ body{
   flex-basis: 0; */
   flex: 1 0 0;
   box-shadow: 0 0 0 1px #000;
-  min-width: 300px;
+  min-width: 350px;
 
   .pagination{
     width: 80%;
     max-width: 500px;
     margin: 0 auto;
+    background-color: yellow;
   }
 
 }
