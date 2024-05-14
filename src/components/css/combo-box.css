@@ -1,0 +1,20 @@
+
+
+body{
+  margin: 0;
+}
+
+.combo-box{
+  background: yellow;
+  border: 1px solid red;
+  padding: 0.5rem;
+  display: inline-grid;
+
+
+  select{
+    appearance: none;
+    border: 0;
+    background-color: transparent;
+    width: 100px;
+  }
+}
