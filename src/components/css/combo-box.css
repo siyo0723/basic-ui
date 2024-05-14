@@ -1,14 +1,15 @@
 
 
 body{
-  margin: 0;
+  margin: 50px;
 }
 
 .combo-box{
-  background: yellow;
-  border: 1px solid red;
-  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #aaa;
   display: inline-grid;
+  grid-template-columns: 1fr;
+  align-items: center;
 
 
   select{
@@ -16,5 +17,21 @@ body{
     border: 0;
     background-color: transparent;
     width: 100px;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+    z-index: 1;
+  }
+
+  select, span{
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  span:first-child{
+    justify-self: start;
+    padding-left: 0.5rem;
+  }
+
+  span:last-child{
+    justify-self: end;
+    padding-right: 0.5rem;
   }
 }
