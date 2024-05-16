@@ -42,10 +42,11 @@ body{
   padding: 0;
   width: 100px;
   height: 100px;
+  overflow: hidden;
   z-index: 10;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   
   span{
     width: 100%;
@@ -53,31 +54,27 @@ body{
     background-color: #fff;
     border-radius: 20px;
     transition: all 200ms;
+    grid-area: 1 / 1 / 2 / 2;
   }
 
   .burger-bar-top{
+    align-self: start;
   }
   .burger-bar-middle{
+    align-self: center;
   }
   .burger-bar-bottom{
+    align-self: end;
   }
 }
 
 /* is-actvie 클래스가 있을 때 */
 .burger-button.is-active{
-  overflow: hidden;
-  justify-content: center;
-
-  span{
-
-  }
-
   .burger-bar-top, .burger-bar-bottom{
-    /* translate: 0 -50%; */
+    align-self: center;
   }
 
   .burger-bar-top{
-    translate: 0 100%;
     rotate: 45deg;
   }
 
@@ -86,7 +83,6 @@ body{
   }
 
   .burger-bar-bottom{
-    translate: 0 -100%;
     rotate: -45deg;
   }
 }
