@@ -11,18 +11,15 @@
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  gap: 1.25rem;
   
-  .header, .navigation, .footer{
-    height: 100px;
-    block-size: 100px;
+  .header, .menu, .main, .footer{
+    max-width: 1280px;
     width: 100%;
-    inline-size: 100%;
+    margin: 0 auto;
   }
 
   .main{
-    max-width: 100%;
-    width: 90%;
     flex: 1 0 auto;
     gap: 24px;
   }
