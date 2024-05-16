@@ -33,6 +33,7 @@ p {
 }
 
 /* viewport 크기 */
+
 @media (max-width: 767px) {
   p {
     font-size: 3vw;
