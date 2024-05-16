@@ -1,48 +1,24 @@
+@import url(./grid.css);
+
 /* 웹카페 반응형 레이아웃 */
 .container{
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
+  align-items: center;
   
   .header, .navigation, .footer{
-    height: 50px;
-    block-size: 50px;
+    height: 100px;
+    block-size: 100px;
+    width: 100%;
+    inline-size: 100%;
   }
 
   .main{
+    max-width: 90%;
+    width: 100%;
     flex: 1 0 auto;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-auto-rows: auto;
-    gap: 24px;
-    grid-template-areas: "book book book book news news news news news news news news"
-                         "board board board board twitter twitter twitter twitter twitter favorite favorite favorite";
-
-
-    .book{
-      grid-area: book;
-    }
-
-    .news{
-      grid-area: news;
-    }
-
-    .board{
-      grid-area: board;
-    }
-
-    .favorite{
-      grid-area: favorite;
-    }
-
-    .twitter{
-      grid-area: twitter;
-    }
   }
 }
-
-
-
-
 
 
