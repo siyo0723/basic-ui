@@ -119,3 +119,10 @@
 }
 
 
+/* 추천 서적 - book */
+.book{
+  background-image: url(/apple/apple_watch.jpeg);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+
