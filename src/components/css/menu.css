@@ -1,5 +1,13 @@
 /* transition - 애니메이션 */
 /* 내비게이션 */
+.navigation{
+  background-color: transparent;
+
+  @media (min-width: 768px){
+    background-color: sandybrown;
+  }
+}
+
 .menu{
   position: fixed;
   background: orange;
@@ -19,5 +27,22 @@
   &.is-active{
     translate: 0 0;
     background: purple;
+  }
+
+  @media (min-width: 768px){
+    background: transparent;
+    position: static;
+    width: auto;
+    height: auto;
+    translate: none;
+    transition: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    a{
+      display: block;
+      padding: 1rem;
+    }
   }
 }
